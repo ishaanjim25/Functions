@@ -1,0 +1,31 @@
+def add(P,Q):
+    return P+Q
+def sub(P,Q):
+    return P-Q
+def div(P,Q):
+    return P/Q
+def mul(P,Q):
+    return P*Q
+
+print("Please select the operation...")
+print("a.Add\nb.Substract\nc.Multiply\nd.Divide")
+
+c=input("Please enter your choice 'a/b/c/d' : ")
+
+n1=int(input("Enter first number: "))
+n2=int(input("Enter second number: "))
+
+if c=='a':
+    print(n1,"+",n2,"=",add(n1,n2))
+
+elif c=='b':
+    print(n1,"-",n2,"=",sub(n1,n2))
+
+elif c=='c':
+    print(n1,"*",n2,"=",mul(n1,n2))
+
+elif c=='d':
+    print(n1,"/",n2,"=",div(n1,n2))
+
+else:
+    print("Invalid input")
